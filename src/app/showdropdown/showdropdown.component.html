@@ -1,0 +1,38 @@
+<!-- app.component.html -->
+<div class="dropdown-container">
+    <h1>hello</h1>
+    {{locations.length}}
+    <div class="dropdown">
+        <select   #inp (change)="updateSelectedValue(0,$event)"
+        name="id">
+        <option value="">Location</option>
+        <option *ngFor="let item of locations" [value]="item" >{{ item }}
+        </option>
+    </select>
+    
+    </div>
+  
+    <div class="dropdown">
+        <select (change)="updateSelectedValue(1, $event)" #inp2 >
+            <option value="">Department</option>
+            <option *ngFor="let department of departments" [value]="department">{{ department }}</option>
+        </select>
+    </div>
+  
+    <div class="dropdown">
+        <select (change)="updateSelectedValue(2, $event)" #inp3 >
+            <option value="">Team</option>
+            <option *ngFor="let team of teams" [value]="team">{{ team }}</option>
+        </select>
+    </div>
+  
+    <div class="dropdown">
+        <select (change)="updateSelectedValue(3, $event)" #inp4 >
+            <option value="">Contract</option>
+            <option *ngFor="let contract of contracts" [value]="contract">{{ contract }}</option>
+        </select>
+    </div>
+  
+    <button (click)="showdata()">&#8594;</button>
+  </div>
+  

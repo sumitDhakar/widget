@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <form id="user-form">
+      <dbs1-input label="Name" type="text" value="Hello world"></dbs1-input>
+      <dbs1-input label="Email" type="email" value="Hello world"></dbs1-input>
+      <dbs1-input label="Message" type="text" value="Hello world"></dbs1-input>
+      <button type="button" onclick="getFormValues()">Submit</button>
+    </form>
+
+    <script>
+      const form = document.getElementById("user-form");
+      Array.from(form.querySelectorAll("dbs1-input")).forEach((input) => {
+        input.addEventListener("valueChange", (e) => {
+          console.log(e.target.value);
+        });
+      });
+      function getFormValues() {
+        const form = document.getElementById("user-form");
+
+        const data = Array.from(form.querySelectorAll("dbs1-input")).map(
+          (input) => {
+            return {
+              label: input.label,
+              value: input.value,
+            };
+          }
+        );
+        console.log(data);
+      }
+    </script>
+      <div class="container">
+        <app-test></app-test>
+      </div> -->
+
+      <!-- app.component.html -->
+      <!-- <button onclick="submitSelection()">Submit values</button> -->
+<!-- 
+
+<app-drop-down
+[locations]="['india','america']"
+[departments]="['departments1','departments4','departments5','departments6','departments7']"
+[teams]="['teams','teams2','teams3','teams4','teams5',]"
+[contracts]="['contracts','contracts2','contracts3','contracts4','contracts5',]"
+></app-drop-down>
+
+
+<script>
+function submitSelection() {
+  // Retrieve selected values from dropdowns
+  var locationValue = document.getElementById("locationDropdown").value;
+  var departmentValue = document.getElementById("departmentDropdown").value;
+  var teamValue = document.getElementById("teamDropdown").value;
+  var contractValue = document.getElementById("contractDropdown").value;
+
+  // Example: Pass selected values to a function for further processing
+  passValues(locationValue, departmentValue, teamValue, contractValue);
+}
+
+function passValues(location, department, team, contract) {
+  // Example: Log the selected values
+  console.log("Location:", location);
+  console.log("Department:", department);
+  console.log("Team:", team);
+  console.log("Contract:", contract);
+
+  // Example: You can perform further actions with these values here
+}
+</script>
+<app-drop-down></app-drop-down>  -->
+
+<app-drop-down
+  [locations]="['Indore', 'Dewas', 'Ujjain', 'Vidisha', 'Bhopal']"
+  [departments]="['Java', 'Php', 'Python', 'Mern']"
+  [teams]="['Php Developer', 'Java Developer', 'Mern Developer', 'Flutter Developer']"
+  [contracts]="['Contract1', 'Contract2', 'Contract3', 'Contract4', 'Contract5']">
+</app-drop-down>
+
+<script src="./dist/test-widgetcomponents/component-lib.js"></script>
+  </body>
+</html>
